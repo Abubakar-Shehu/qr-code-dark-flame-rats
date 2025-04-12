@@ -67,7 +67,7 @@ header h3 {
 
 .body {
     text-align: center;
-    background-color: darkgrey;
+    background-color: #f8fafb;
     padding: 20px 40px;
 }
 
@@ -90,7 +90,7 @@ header h3 {
 
 .career-boxes section {
     width: 388px;
-    border: 1px solid darkgray;
+    border: 1px solid #fff;
     border-radius: 25px;
     padding: 20px;
     text-align: center;
@@ -108,6 +108,28 @@ header h3 {
 
 .cool-part h3 {
     text-align: center;
+}
+
+.path-step {
+    background-color: #87CEFA;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.path-step h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.path-step p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #333;
+}
+
+.path-step:not(:last-child) {
+    border-bottom: 2px solid #fff;
 }
 
 /*960 - 4 - 80 - 20 - 80=*/
