@@ -79,6 +79,13 @@ header h3 {
     padding: 20px 40px;
 }
 
+.body h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    margin-bottom: 20px;
+}
+
 .body p {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -117,6 +124,16 @@ header h3 {
 
 .cool-part h3 {
     text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    margin-bottom: 20px;
+}
+
+.career {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .path-step {
@@ -140,12 +157,3 @@ header h3 {
 .path-step:not(:last-child) {
     border-bottom: 2px solid #fff;
 }
-
-/*960 - 4 - 80 - 20 - 80=*/
-/*
-header h2,
-header h3,
-header p {
-    text-align: center;
-}
-*/
