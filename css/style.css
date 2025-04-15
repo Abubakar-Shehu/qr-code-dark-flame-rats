@@ -133,8 +133,37 @@ header h3 {
 .career {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
+
+.arrow-diagonal {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    transform: rotate(90deg) skew(10deg, 10deg);
+}
+
+.career .first {
+    align-self: flex-start;
+}
+
+.career .second {
+    align-self: flex-start;
+}
+
+.career .third {
+    align-self: flex-end;
+}
+
+.career img {
+    align-self: flex-end;
+}
+
+.career .second-img {
+    align-self: flex-start;
+}
+
+
 
 .path-step {
     background-color: #87CEFA;
