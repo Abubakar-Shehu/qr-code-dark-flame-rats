@@ -135,14 +135,6 @@ header h3 {
     flex-direction: column;
 }
 
-.arrow-diagonal {
-    width: 10px;
-    height: 10px;
-    border-left: 2px solid;
-    border-top: 2px solid;
-    transform: rotate(90deg) skew(10deg, 10deg);
-}
-
 .career .first {
     align-self: flex-start;
 }
@@ -162,8 +154,6 @@ header h3 {
 .career .second-img {
     align-self: flex-start;
 }
-
-
 
 .path-step {
     background-color: #87CEFA;
