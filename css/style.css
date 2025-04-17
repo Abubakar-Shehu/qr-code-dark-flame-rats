@@ -130,6 +130,10 @@ header h3 {
     margin-bottom: 20px;
 }
 
+.career-path h1 {
+    text-align: center;
+}
+
 .career {
     display: flex;
     flex-direction: column;
@@ -139,6 +143,19 @@ header h3 {
     align-self: flex-start;
 }
 
+.first img {
+    /*    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    */
+    margin-left: 200px;
+    margin-top: 110px
+}
+
+
 .career .second {
     align-self: flex-start;
 }
@@ -147,8 +164,14 @@ header h3 {
     align-self: flex-end;
 }
 
-.career img {
-    align-self: flex-end;
+.pic {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pic img:nth-child(1) {
+    margin-right: 120px;
+    margin-top: 90px;
 }
 
 .career .second-img {
@@ -156,10 +179,18 @@ header h3 {
 }
 
 .path-step {
+    display: flex;
+}
+
+.path-step div {
     background-color: #87CEFA;
     margin: 15px 0;
-    padding: 15px;
+    padding: 15px 10px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
 }
 
 .path-step h2 {
