@@ -132,50 +132,19 @@ header h3 {
 
 .career-path h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .career {
     display: flex;
     flex-direction: column;
-}
-
-.career .first {
-    align-self: flex-start;
-}
-
-.first img {
-    /*    justify-self: center;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
-    align-self: center;
-    align-content: center;
-    */
-    margin-left: 200px;
-    margin-top: 110px
-}
-
-
-.career .second {
-    align-self: flex-start;
-}
-
-.career .third {
-    align-self: flex-end;
+    gap: 20px;
 }
 
 .pic {
     display: flex;
-    justify-content: flex-end;
-}
-
-.pic img:nth-child(1) {
-    margin-right: 120px;
-    margin-top: 90px;
-}
-
-.career .second-img {
-    align-self: flex-start;
+    justify-content: center;
 }
 
 .path-step {
@@ -184,23 +153,19 @@ header h3 {
 
 .path-step div {
     background-color: #87CEFA;
-    margin: 15px 0;
     padding: 15px 10px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70px;
 }
 
 .path-step h2 {
     font-size: 22px;
-    margin: 0;
 }
 
 .path-step p {
     font-size: 16px;
-    margin-top: 8px;
     color: #333;
 }
 
