@@ -1,3 +1,4 @@
+/*
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -7,6 +8,12 @@ body {
     font-size: 100%;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 header {
@@ -68,6 +75,10 @@ header h3 {
     padding: 10px 25px;
 }
 
+button a {
+    color: #fff;
+}
+
 .button:hover {
     background-color: #fff;
     color: black;
@@ -102,24 +113,72 @@ header h3 {
     margin-bottom: 50px;
 }
 
-.career-boxes section {
+.career-boxes a {
     flex-basis: 40%;
     flex-grow: 1;
-    border: 1px solid #fff;
     border-radius: 25px;
     padding: 20px;
-    text-align: center;
     background-color: #fff;
     display: flex;
     text-wrap: wrap;
+    border: 1px solid #fff;
 }
 
+.career-boxes section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-boxes a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 38, 255, 0.5);
+    background-color: #fff;
+    color: #2b11bd;
+}
+
+a:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
 .career-boxes img {
     margin-right: 20px;
 }
 
+.cool-pics h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+/*
+.bottom-text {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+*/
+
+/*
+.cool-pics {
+    text-align: center;
+}
+
+.bottom-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; Center the images horizontally 
+    gap: 15px; Add space between images 
+}
+
+.bottom-text img {
+    width: 100%;
+    height: auto;  Maintain aspect ratio 
+    flex-grow: 1;
+}
+
 .cool-part {
     padding-top: 25px;
+
 }
 
 .cool-part h3 {
@@ -171,4 +230,329 @@ header h3 {
 
 .path-step:not(:last-child) {
     border-bottom: 2px solid #fff;
+}
+
+Cyber page
+.cyb-page {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    gap: 20px;              
+    height: 100vh;         
+
+.cyber-page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 40px; 
+    background-color: #f1f1f1; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.cyber-page img {
+    margin-bottom: 15px; 
+}
+
+.cyb-page a {
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff; 
+    color: white;           
+    border-radius: 5px;    
+    text-align: center;
+    text-decoration: none;  
+    cursor: pointer;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-height: 30px;
+    max-width: 100px;
+}
+
+.cyb-page a:hover {
+    background-color: #0056b3; 
+}
+
+.home img {
+    margin-bottom: 8px; 
+}
+*/
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Body */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: #f8fafb;
+    color: #333;
+}
+
+/* Header */
+header {
+    padding: 100px 0 50px;
+    background-image: url(../img/bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.header .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.hero h2 {
+    font-family: "Commissioner", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Main Section */
+.body {
+    text-align: center;
+    padding: 40px;
+}
+
+.body h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    margin-bottom: 20px;
+}
+
+.body p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: darkblue;
+    line-height: 1.3;
+}
+
+/* Career Boxes */
+.career-boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.career-boxes a {
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-boxes a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 38, 255, 0.5);
+}
+
+.career-boxes img {
+    margin-right: 15px;
+}
+
+.career-boxes section p {
+    font-size: 18px;
+}
+
+/* Cool Pics Section */
+.cool-pics {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cool-pics h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Bottom Text (Image Gallery) */
+.bottom-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.bottom-text img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.bottom-text img:hover {
+    transform: scale(1.05);
+}
+
+/* Cool Part */
+.cool-part {
+    padding-top: 25px;
+}
+
+.cool-part h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.career-path h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Path Steps */
+.path-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #87CEFA;
+    padding: 15px 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.path-step h2 {
+    font-size: 22px;
+}
+
+.path-step p {
+    font-size: 16px;
+    color: #333;
+}
+
+.path-step:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Career Path Images */
+.pic {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pic img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Cyber Page */
+.cyb-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.cyber-page {
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyber-page img {
+    margin-bottom: 15px;
+}
+
+.cyb-page a {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    max-width: 100px;
+}
+
+.cyb-page a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.home img {
+    margin-bottom: 8px;
 }
